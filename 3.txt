@@ -1,0 +1,26 @@
+#PROGRAM 3
+
+l1 = ['bbb', 'ccc', 'axx', 'xzz', 'xaa']
+l2 = ['mix', 'xyz', 'apple', 'xanadu', 'aardvark']
+f=[]
+f2=[]
+f3=[]
+f4=[]
+for i in l1:
+  if i[0] == 'x':
+    f.append(i)
+  else :
+    f2.append(i)  
+for j in l2:
+  if j[0] == 'x':
+    f3.append(j)
+  else :
+    f4.append(j) 
+f.sort()
+f2.sort()
+f.extend(f2)
+f3.sort()
+f4.sort()
+f3.extend(f4)
+print("The Sorted list for List 1 is", f)
+print("Thw Sorted list for List 2 is",f3)

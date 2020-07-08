@@ -1,0 +1,33 @@
+#PROGRAM 2
+
+l1=['axa', 'xyz', 'gg', 'x', 'yyy']
+l2=['x', 'cd', 'cnc', 'kk']
+l3=['bab', 'ce', 'cba', 'syanora']
+f=0
+ff=0
+fff=0
+ffff=0
+f3=0
+f4=0
+for i in l1:
+  if(len(i)>=2):
+     f=f+1
+  if len(i)>=2 and i[0]==i[-1]:
+      ff=ff+1
+for i in l2:
+  if(len(i)>=2):
+     fff=fff+1
+  if len(i)>=2 and i[0]==i[-1]:
+      ffff=ffff+1
+for i in l3:
+  if(len(i)>=2):
+     f3=f3+1
+  if len(i)>=2 and i[0]==i[-1]:
+      f4=f4+1
+print("Length if string 1 having length 2 is ",f)
+print("Count of String Starting and ending with same charcter in String 1 is",ff)
+print("Length if string 2 having length 2 is ",fff)
+print("Count of String Starting and ending with same charcter in String 2 is",ffff)
+print("Length if string 3 having length 2 is ",f3)
+print("Count of String Starting and ending with same charcter in String 3 is",f4)
+

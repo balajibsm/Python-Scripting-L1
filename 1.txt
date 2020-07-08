@@ -1,0 +1,18 @@
+#PROGRAM 1
+topDomainList=["edu","com","org","in"]
+urlList = ["www.ndtv.com", "www.website.org", "www.bis.org.in", "www.rbi.org.in", "www.google.com", "www.annauniv.edu"]
+
+def sortDomainNames(domainList,urlList):
+	tempDomainList = domainList
+	tempUrlList = urlList
+	sortedUrlList = []
+	
+	for i,v in enumerate(tempDomainList):
+		for i1,v1 in enumerate(tempUrlList):
+			if v1.endswith(v):
+				sortedUrlList.append(v1)
+
+	print (sortedUrlList)
+
+
+sortDomainNames(topDomainList,urlList)

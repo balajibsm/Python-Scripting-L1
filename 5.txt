@@ -1,0 +1,27 @@
+#PROGRAM 5
+
+l1=[1, 2, 2, 3]
+l2=[2, 2, 3, 3, 3]
+f=[]
+ff=[]
+s=len(l1)
+    
+for i in range(0,len(l1)):
+    if i<=(len(l1))-2:
+      if l1[i] == l1[i + 1] :
+        continue
+      else:
+        f.append(l1[i])
+    elif i==s-1:
+      f.append(l1[i])
+      
+for i in range(0,len(l2)):
+    if i<=(len(l2))-2:
+      if l2[i] == l2[i + 1] :
+        continue
+      else:
+        ff.append(l2[i])
+    elif i==len(l2)-1:
+      ff.append(l2[i]) 
+print("After removing same adjacent elemnet, the list1 is",f)  
+print("After removing same adjacent elemnet, the list2 is",ff) 
